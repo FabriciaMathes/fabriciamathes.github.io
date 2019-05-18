@@ -1,0 +1,479 @@
+﻿@charset "UTF8";
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+
+
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+li{
+	list-style: none;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+/* Formatação do Menu*/
+
+/* Esconde menu minimizado */
+	.collapse {
+	  display: none;
+	}
+	.collapse.in {
+	  display: block;
+	}
+	tr.collapse.in {
+	  display: table-row;
+	}
+	tbody.collapse.in {
+	  display: table-row-group;
+	}
+/* Fim Esconde menu minimizado */
+
+		.nav > li > a {
+		  position: relative;
+		  display: block;
+		  padding: 10px 15px;
+		}
+
+/*Menu da tela*/
+	@media (min-width: 768px) {
+	  .navbar-collapse {
+		width: auto;
+		border-top: 0;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+
+				
+	  }
+	  .navbar-collapse.collapse {
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible !important;
+	  }
+	  .navbar-collapse.in {
+		overflow-y: visible;
+	  }
+	  .navbar-fixed-top .navbar-collapse,
+	  .navbar-static-top .navbar-collapse,
+	  .navbar-fixed-bottom .navbar-collapse {
+		padding-right: 0;
+		padding-left: 0;
+	  }
+	}
+	/*tamanho da cor fundo acompanha menu minimizado*/
+	.navbar-fixed-top .navbar-collapse,
+	.navbar-fixed-bottom .navbar-collapse {
+	  max-height: 340px;
+
+	}
+	
+	/*posição do menu ao minimizado*/
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+	  margin-right: -20px;
+	  margin-left: -15px;
+	}
+	/*opções menu ao minimizado*/
+	@media (min-width: 768px) {
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+	margin-right: 0;
+	margin-left: 0;
+  }
+}
+
+		.navbar-static-top {
+		  z-index: 1000;
+		  border-width: 0 0 1px;
+		}
+		@media (min-width: 768px) {
+		  .navbar-static-top {
+			border-radius: 0;
+		  }
+		}
+		.navbar-fixed-top,
+		.navbar-fixed-bottom {
+		  position: fixed;
+		  top: 20%;
+		  right: 0;
+		  left: 0;
+		  z-index: 1030;
+		}
+		@media (min-width: 768px) {
+		  .navbar-fixed-top,
+		  .navbar-fixed-bottom {
+			border-radius: 0;
+		  }
+		}
+				.navbar-fixed-top {
+				  top: 10%;
+				  border-width: 0 0 1px;
+				}
+		.navbar-fixed-bottom {
+		  bottom: 0;
+		  margin-bottom: 0;
+		  border-width: 1px 0 0;
+		}
+
+		.navbar-toggle {
+		  position: relative;
+		  float: right;
+		  padding: 9px 10px;
+		  margin-top: 8px;
+		  margin-right: 20px;
+		  margin-bottom: 8px;
+		  background-color: transparent;
+		  background-image: none;
+		  border: 1px solid transparent;
+		  border-radius: 4px;
+		}
+		.navbar-toggle:focus {
+		  outline: 0;
+		}
+		.navbar-toggle .icon-bar {
+		  display: block;
+		  width: 22px;
+		  height: 2px;
+		  border-radius: 1px;
+		}
+		.navbar-toggle .icon-bar + .icon-bar {
+		  margin-top: 4px;
+		}
+		@media (min-width: 768px) {
+		  .navbar-toggle {
+			display: none;
+		  }
+		}
+		
+
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+	
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+		/* Cor fundo menu preto*/
+		.navbar-inverse {
+		  background-color: #00b0ba;
+		  border-color: #080808;
+		/* posição a esquerda
+		  left: 10.5%;*/
+		/* posição a direita
+		  right: 10.5%;*/
+		 	/*Passar por cima dos documentos */
+		  position: absolute;
+		 /*Borda arredondada*/
+         border-radius: 10px;
+         /* Menu ficar no canto, alinhado*/
+         float: left;
+		 width:100%;
+		 top: 102%;
+		}
+
+		/* cor das letras do menu*/
+		.navbar-inverse .navbar-nav > li > a {
+		  color: #ffffff;
+
+		}
+
+		/*passar o mouse por cima do menu muda de cor*/		
+		.navbar-inverse .navbar-nav > li > a:hover,
+		.navbar-inverse .navbar-nav > li > a:focus {
+		  color: #ffffff;
+		  background-color: transparent;
+		}
+
+		/*Quadrado menu tela minimizada*/
+		.navbar-inverse .navbar-toggle {
+		}
+		/*cor fundo quadrado menu tela minimizada*/		
+		.navbar-inverse .navbar-toggle:hover,
+		.navbar-inverse .navbar-toggle:focus {
+		  background-color: #00b0ba;
+		  position: relative;
+		}
+		/*cor 3 risquinhos menu tela minimizada*/	
+		.navbar-inverse .navbar-toggle .icon-bar {
+		  background-color: #fff;
+		}
+
+/*# sourceMappingURL=bootstrap.css.map */
+
+
+
+/*Configuração da tela cor*/
+body {
+	/*sans-serif tira os traços que existe em cima e embaixo de cada letra*/
+	font-family: Arial, sans-serif;
+	/*background-image: url("fundo.jpg");*/
+	/*background-color: hsla(165,81%,93%,0.50) define a cor da pagina pelo brilho*/
+	background-color: #fcfffd;
+	color: rgba(0,0,0,1);
+	/*font-size:100%;*/
+}
+
+/* Configuração do tamannho da tela, sobreado da tela*/
+div#interface {
+	width: 80%;
+	margin: -20px auto 0px auto;
+	/*Sobra em volta do objeto*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px 10px 10px 10px;
+}
+
+/*Configuração dos paragrafos*/
+p {
+	/*Alinhamento do texto, center, right */
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/* Posição Imagem Jaque no cabeçalho
+header#cabecalho img#icone{
+	position: absolute;
+	left: 950px;
+	top: 100px;
+}*/
+
+/* Posição Imagem Simbolo e linha divisão cabeçalho do corpo*/
+header#cabecalho {
+	/*Borda de baixo */
+	border-bottom: 1px #00b0ba solid;
+	height: 200px;                
+	background: url("../_Imagens/Simbolo.png") no-repeat 0px 5px;
+	background-color: #008c99;
+	border-radius: 10px;
+	position: relative;
+	width:100%;
+	margin-top:-4%;
+}
+
+/* Configuração escrita cabeçalho Nome:Jaqueline Gutierrez*/
+header#cabecalho h1{
+	/*font-family: Arial, sans-serif;*/
+	/*fonte usada*/
+	font-family: 'Gabriola', cursive;
+	/*tamanho da fonte*/
+	font-size:5vw;
+	font-weight: 500;
+	/*cor*/
+	color: #ffffff;
+	/*Sombreado da letra,*/
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+	/*Definir o tamanho do espaço em branco entre o conteúdo do elemento e a borda do elemento*/
+	padding:0% 0% 0% 40%;
+	/*Define a margem inferior de um elemento, alinhamento inferior*/
+	margin-bottom:0px; 
+	position: relative;
+}
+
+/* Configuração escrita cabeçalho Nome:Psicóloga Clínica*/
+header#cabecalho h2{
+	font-family: 'Gabriola', sans-serif;
+	font-size:2.0vw;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+	padding:0% 0% 0% 40%;
+	margin-top:-4%;
+	max-width:300%;
+	
+}
+
+header#cabecalho h3{
+	font-family: 'Gabriola', sans-serif;
+	font-size:1.5vw;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+	padding:0% 0% 0% 55%;
+	margin-top:-4%;
+	max-width:300%;
+	
+}
+
+
+#contato {
+	font-family: 'Titillium Web', sans-serif;
+	margin-left:55%;
+	padding:30px 0px 0px 0px ;
+}
+
+#formulario{
+	font-family: 'Titillium Web', sans-serif;
+	text-align: right;
+	margin-right: 65%;
+	margin-top: -9%;
+	font-size:1vw;
+}
+
+/* Posição do cabeçalho*/
+header#cabecalhocontato img#icone{
+	position: absolute;
+	left: 950px;
+	top: 100px;
+}
+/*##### Fim Configuração tela Contato#####*/
+
+#assunto{
+	width: 55%; 
+	height: 20%; 
+	max-height:100px; 
+	max-width:150%;
+}
+
+	
+/* Formatação de imagens com legendas */	
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	/*sobreado*/
+	box-shadow: 1px 1px 4px black; 
+	text-align: center;
+	background-color: white;
+	border-radius: 8px;
+	color: #66a;
+}	
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 1px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+	font-size:2vw;
+}
+figure.foto-legenda:hover figcaption{
+	opacity:1;
+}
+
+/* Formatação do Menu*/
+nav#menu {
+	/*Bloco flutuante deconectar do texto*/
+	width: 100%;
+	height: 100%;
+	display: block;
+
+	}
+nav#menu ul{
+	/*sumir com o marcador*/
+	list-style: none;
+	/*todas a letras em maiusculo*/
+	text-transform: uppercase;
+	/*Passar por cima dos documentos */
+	position: absolute;
+	/* posição do topo*/
+	top: 80px;
+	/* posição a esquerda*/
+	left: 50%;
+}
+
+/*passar o mouse por cima do menu muda de cor*/
+nav#menu li:hover{
+	/*seleção da cor*/
+	background: #00b0ba;
+}
+nav#menu h1 {
+	/*Esconde a escrita "Menu Principal" */
+	display: none;
+}
+/*todo menu que tenha um link "a" vai ter a configuração*/
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;	
+}
+/*menu muda de cor quando passar por cima*/
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+section#corpo{
+	/*BLOCO FLUTUANTE deconectar do texto*/
+	display: block;
+	width: 50%;
+	/*flutuação a esquerda*/
+	float: left;
+	/*border-right: 1px solid #606060;*/
+	padding-right: 20px;
+}
+
+/*Separação em artigo, subtitulos "Psicologia Clínica" e "O que é"*/
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px;
+	/*margin:10px 0px 10px 0px;*/
+	border-radius: 10px 10px;
+}
+
+aside#lateral {
+	display: block;
+	width: 45%;
+	float: right;
+}
+
+footer#rodape{
+	clear:both;
+	border-top: 1px solid #606060;
+	background-color: #008d9b;
+}
+footer#rodape p{
+	text-align: center;
+}
+
+
+
