@@ -1,5 +1,5 @@
 ﻿<?php
-
+//teste 
 $nome = $_POST["nome"];
 $fone = $_POST["fone"];
 $email = $_POST["email"];
